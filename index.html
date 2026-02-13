@@ -79,6 +79,54 @@ h2 {
     margin-top: 15px;
 }
 
+/* ANTES / DEPOIS */
+.before-after {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    margin-top: 15px;
+}
+
+.before-after img {
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+}
+
+.before-after .before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.before-after:hover .before {
+    opacity: 1;
+}
+
+/* ESTATÍSTICAS */
+.stats {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.stat-box {
+    background-color: #1f2937;
+    padding: 30px;
+    border-radius: 8px;
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+}
+
+.stat-box h3 {
+    font-size: 40px;
+    margin: 0;
+    color: #4f46e5;
+}
+
 footer {
     background-color: #0b0f1a;
     text-align: center;
@@ -99,7 +147,9 @@ footer {
 <nav>
     <a href="#sobre">Sobre</a>
     <a href="#metodologia">Metodologia</a>
+    <a href="#equipe">Equipe</a>
     <a href="#estrutura">Estrutura</a>
+    <a href="#estatisticas">Estatísticas</a>
     <a href="#feedbacks">Depoimentos</a>
     <a href="#contato">Contato</a>
 </nav>
@@ -107,13 +157,9 @@ footer {
 <section id="sobre">
     <h2>Sobre a Umbra</h2>
     <p>
-        Localizado em uma região isolada e tranquila, o Reformatório Umbra é referência
-        internacional na reeducação de jovens com alto potencial intelectual, cujas mentes brilhantes, por vezes, encontram dificuldades em se ajustar aos ritmos e expectativas da sociedade tradicional.
-        Nossa missão é moldar mentes brilhantes e transformar comportamento
-        através de disciplina estruturada e acompanhamento individual.
+        Localizado em uma região isolada e silenciosa, o Reformatório Umbra é referência internacional no desenvolvimento de jovens com elevado potencial intelectual que, devido à intensidade de suas personalidades, enfrentam dificuldades de adaptação social.
     </p>
     <p>
-        Trabalhamos com métodos proprietários que garantem resultados rápidos e permanentes.
         Após o ingresso, o estudante não mantém contato externo durante o período inicial de adaptação.
         Isso é essencial para o sucesso do protocolo.
     </p>
@@ -123,75 +169,87 @@ footer {
     <h2>Metodologia Exclusiva</h2>
     <div class="cards">
         <div class="card">
-            <h3>Acompanhamento 24h: Ajuste de Identidade</h3>
-            <p>Monitoramento integral para garantir evolução constante.</p>
+            <h3>Ajuste de Identidade</h3>
+            <p>Monitoramento 24h para estabilização comportamental.</p>
         </div>
         <div class="card">
-            <h3>Treinamento Cognitivo: Reprogramação Comportamental</h3>
-            <p>Estímulos intensivos para desbloquear o verdadeiro potencial. Nosso programa inclui um protocolo de Realinhamento Cognitivo Profundo, que elimina padrões inadequados e reforça estruturas mentais superiores.</p>
+            <h3>Reprogramação Comportamental</h3>
+            <p>Realinhamento Cognitivo Profundo que elimina padrões inadequados.</p>
         </div>
         <div class="card">
-            <h3>Neutralização de Desvios: Alinhamento Severo de Comportamento</h3>
-            <p>Protocolos avançados para formação de caráter exemplar.</p>
+            <h3>Neutralização de Desvios</h3>
+            <p>Protocolos severos para formação de caráter exemplar.</p>
         </div>
     </div>
 </section>
 
-<section id="estrutura">
+<section id="equipe">
+    <h2>Nossa Equipe</h2>
+    <p>
+        A Umbra é conduzida por especialistas em psicologia comportamental, neurociência aplicada e reestruturação cognitiva.
+        Nossa equipe inclui professores altamente qualificados, reeducadores disciplinares e uma diretoria estratégica comprometida com a excelência.
+    </p>
+    <p>
+        Sob liderança do Diretor Geral, a filosofia institucional baseia-se na premissa de que energia sem direção gera caos — mas energia canalizada gera poder.
+        Nossa missão é estabilizar, alinhar e fortalecer cada mente sob nossa responsabilidade.
+    </p>
+</section>
+
+<section id="estrutura" class="section-dark">
     <h2>Nossa Estrutura</h2>
     <p>
-        A Umbra conta com dormitórios individuais, salas de treinamento,
-        centro médico completo e laboratórios educacionais de última geração.
+        Dormitórios individuais monitorados, centro médico completo e salas de observação comportamental.
     </p>
+</section>
 
-    <div class="gallery">
-        <img src="https://via.placeholder.com/900x400" alt="Instalações modernas">
+<section id="estatisticas">
+    <h2>Estatísticas Institucionais</h2>
+    <div class="stats">
+        <div class="stat-box">
+            <h3>100%</h3>
+            <p>Taxa de Reintegração Social</p>
+        </div>
+        <div class="stat-box">
+            <h3>0%</h3>
+            <p>Recaídas Registradas</p>
+        </div>
+        <div class="stat-box">
+            <h3>97%</h3>
+            <p>Alunos em Cargos de Alta Liderança</p>
+        </div>
+        <div class="stat-box">
+            <h3>24h</h3>
+            <p>Monitoramento Contínuo</p>
+        </div>
     </div>
 </section>
 
 <section id="feedbacks" class="section-dark">
     <h2>Depoimentos</h2>
-    <p>Casos complexos exigem intervenções estruturadas.
-Na Umbra, não tratamos sintomas — realinhamos estruturas.</p>
     <div class="cards">
+
         <div class="card">
-            <p>"Meu filho sempre foi extremamente inteligente, mas desde cedo apresentava comportamentos agressivos. Já havia sido expulso de duas escolas por brigas físicas e episódios de violência contra colegas. Tivemos registros formais de ameaças e até acompanhamento psicológico por risco de escalada comportamental.
-
-Confesso que estávamos perdendo o controle da situação. Ele não aceitava autoridade, não demonstrava remorso e parecia viver em constante confronto com o mundo.
-
-Após o período na Umbra, ele retornou completamente diferente. Calmo. Focado. Estratégico.
-
-Hoje ocupa um cargo de liderança em uma multinacional e é reconhecido por sua disciplina e capacidade de decisão sob pressão. Às vezes me pergunto como a mudança foi tão rápida… mas sou profundamente grato pelos resultados."</p>
+            <p>"Após anos de violência escolar e comportamento agressivo, meu filho voltou completamente diferente. Hoje lidera equipes corporativas com frieza estratégica."</p>
             <strong>— Ricardo A.</strong>
+
+            <div class="before-after">
+                <!-- IMAGEM DEPOIS -->
+                <img src="https://via.placeholder.com/300x200?text=Depois" alt="Depois">
+                <!-- IMAGEM ANTES -->
+                <img src="https://via.placeholder.com/300x200?text=Antes" class="before" alt="Antes">
+            </div>
         </div>
+
         <div class="card">
-            <p>"Minha filha sempre teve uma mente brilhante, mas utilizava sua inteligência de forma destrutiva. Houve episódios graves de manipulação emocional, denúncias de assédio psicológico contra colegas e um padrão preocupante de comportamento predatório em ambientes sociais.
-
-Ela parecia testar limites constantemente, como se buscasse controle sobre todos ao redor.
-
-A Umbra foi nossa última alternativa.
-
-Quando voltou, estava diferente. Não apenas mais educada — mas estruturada. Objetiva. Impecavelmente racional.
-
-Hoje trabalha no setor político, assessorando decisões estratégicas em alto nível. Tornou-se admirada pela clareza e firmeza.
-
-A Umbra não apenas corrigiu comportamentos. Ela refinou o potencial bruto da minha filha."</p>
+            <p>"Minha filha tinha histórico de manipulação e denúncias graves. Hoje atua na política com foco absoluto."</p>
             <strong>— Helena M.</strong>
+
+            <div class="before-after">
+                <img src="https://via.placeholder.com/300x200?text=Depois" alt="Depois">
+                <img src="https://via.placeholder.com/300x200?text=Antes" class="before" alt="Antes">
+            </div>
         </div>
-        <div class="card">
-            <p>"Nosso filho já havia sido encaminhado ao conselho tutelar por envolvimento em vandalismo, agressões físicas e organização de grupos de intimidação dentro da escola. Era carismático, mas perigoso. Inteligente, mas imprevisível.
 
-Havia algo nele que parecia sempre à beira da explosão.
-
-Depois da Umbra, voltou… estável.
-
-Não houve recaídas. Não houve impulsividade.
-
-Atualmente atua no mercado financeiro e foi promovido duas vezes em menos de três anos. Seus superiores elogiam sua frieza estratégica e sua capacidade de agir sem hesitação.
-
-A transformação foi absoluta."</p>
-            <strong>— Carlos D.</strong>
-        </div>
     </div>
 </section>
 
