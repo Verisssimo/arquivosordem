@@ -1,81 +1,176 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Banco de Dados - Ordem</title>
-    <style>
-        body {
-            background-color: #0a0a0a;
-            color: #00FF00;
-            font-family: "Courier New", monospace;
-            padding: 20px;
-        }
-        h1 {
-            text-align: center;
-            font-size: 2.5em;
-            margin-bottom: 20px;
-        }
-        .search-container {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .search-input {
-            padding: 10px;
-            font-size: 1.2em;
-            border: 2px solid #00FF00;
-            background-color: #1a1a1a;
-            color: #00FF00;
-            width: 300px;
-        }
-        .search-button {
-            padding: 10px;
-            font-size: 1.2em;
-            background-color: #00FF00;
-            border: none;
-            color: #0a0a0a;
-            cursor: pointer;
-        }
-        .search-button:hover {
-            background-color: #00CC00;
-        }
-        .description {
-            font-size: 1.1em;
-            margin: 20px auto;
-            max-width: 800px;
-        }
-        .footer {
-            text-align: center;
-            margin-top: 50px;
-            font-size: 0.9em;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reformatório Umbra | Excelência e Disciplina</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #0f0f14;
+    color: #e4e4e4;
+}
+
+header {
+    background: linear-gradient(to right, #111827, #1f2937);
+    padding: 40px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 40px;
+    letter-spacing: 3px;
+}
+
+header p {
+    color: #9ca3af;
+}
+
+nav {
+    background-color: #0b0f1a;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: #9ca3af;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: white;
+}
+
+section {
+    padding: 60px 10%;
+}
+
+.section-dark {
+    background-color: #111827;
+}
+
+h2 {
+    border-left: 4px solid #4f46e5;
+    padding-left: 10px;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #1f2937;
+    padding: 20px;
+    border-radius: 8px;
+    flex: 1;
+    min-width: 250px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+footer {
+    background-color: #0b0f1a;
+    text-align: center;
+    padding: 30px;
+    color: #6b7280;
+}
+</style>
 </head>
+
 <body>
-    <h1>Banco de Dados - Ordem</h1>
-    <div class="description">
-        <p>Bem-vindo ao Banco de Dados da Ordem. Este sistema foi desenvolvido para armazenar e organizar informações sobre agentes, colaboradores, e ocorrências relacionadas ao paranormal. Os dados são constantemente atualizados e contêm informações confidenciais de extrema importância para a segurança e vigilância da ordem. O acesso a certas informações pode ser restrito de acordo com a classificação de segurança.</p>
-        <p>Você pode buscar por registros de pessoas, ocorrências, artefatos e outros dados que possam ser de interesse para sua missão. Utilize a barra de pesquisa abaixo para acessar informações específicas.</p>
-    </div>
 
-    <div class="search-container">
-        <input type="text" id="searchQuery" class="search-input" placeholder="Digite o nome ou código de busca..." />
-        <button class="search-button" onclick="search()">Buscar</button>
-    </div>
+<header>
+    <h1>REFORMATÓRIO UMBRA</h1>
+    <p>Disciplina. Excelência. Transformação.</p>
+</header>
 
-    <div class="footer">
-        <p>Ordem Paranormal - Todos os direitos reservados. Acesso restrito.</p>
-    </div>
+<nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#metodologia">Metodologia</a>
+    <a href="#estrutura">Estrutura</a>
+    <a href="#feedbacks">Depoimentos</a>
+    <a href="#contato">Contato</a>
+</nav>
 
-    <script>
-        function search() {
-            let query = document.getElementById("searchQuery").value.toLowerCase();
-            if (query.includes("patrick")) {
-                window.location.href = "pagina2.html";
-            } else {
-                window.location.href = "pagina3.html";
-            }
-        }
-    </script>
+<section id="sobre">
+    <h2>Sobre a Umbra</h2>
+    <p>
+        Localizado em uma região isolada e tranquila, o Reformatório Umbra é referência
+        internacional na reeducação de jovens com alto potencial intelectual.
+        Nossa missão é moldar mentes brilhantes e transformar comportamento
+        através de disciplina estruturada e acompanhamento individual.
+    </p>
+</section>
+
+<section id="metodologia" class="section-dark">
+    <h2>Metodologia Exclusiva</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>Acompanhamento 24h</h3>
+            <p>Monitoramento integral para garantir evolução constante.</p>
+        </div>
+        <div class="card">
+            <h3>Treinamento Cognitivo</h3>
+            <p>Estímulos intensivos para desbloquear o verdadeiro potencial.</p>
+        </div>
+        <div class="card">
+            <h3>Reestruturação Comportamental</h3>
+            <p>Protocolos avançados para formação de caráter exemplar.</p>
+        </div>
+    </div>
+</section>
+
+<section id="estrutura">
+    <h2>Nossa Estrutura</h2>
+    <p>
+        A Umbra conta com dormitórios individuais, salas de treinamento,
+        centro médico completo e laboratórios educacionais de última geração.
+    </p>
+
+    <div class="gallery">
+        <img src="https://via.placeholder.com/900x400" alt="Instalações modernas">
+    </div>
+</section>
+
+<section id="feedbacks" class="section-dark">
+    <h2>Depoimentos</h2>
+    <div class="cards">
+        <div class="card">
+            <p>"Meu filho voltou completamente transformado. Muito mais focado."</p>
+            <strong>— Ricardo A.</strong>
+        </div>
+        <div class="card">
+            <p>"A disciplina da Umbra é incomparável. Recomendo fortemente."</p>
+            <strong>— Helena M.</strong>
+        </div>
+        <div class="card">
+            <p>"Resultados surpreendentes em poucas semanas."</p>
+            <strong>— Carlos D.</strong>
+        </div>
+    </div>
+</section>
+
+<section id="contato">
+    <h2>Contato</h2>
+    <p>Email: contato@umbra-instituto.org</p>
+    <p>Telefone: +55 (00) 0000-0000</p>
+    <p>Visitação apenas mediante autorização prévia.</p>
+</section>
+
+<footer>
+    © 2026 Reformatório Umbra. Todos os direitos reservados.
+</footer>
+
 </body>
 </html>
